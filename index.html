@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,22 +8,22 @@
     <title>Chuck Norris API</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="top-container">
-        <h1>
-          Frases Random de <br />
-          "Chuck Norris"
-        </h1>
-      </div>
-      <div class="img"><img src="" alt="img-chuck" id="chuck-img" /></div>
-      <div class="quote-container">
-        <p id="msg-quote"></p>
-      </div>
+    <main class="container">
+      <header class="header">
+        <h1>Frases Random de <span class="highlight">Chuck Norris</span></h1>
+      </header>
+      <section class="image-section">
+        <img src="" alt="Chuck Norris" id="chuck-img" />
+      </section>
 
-      <div class="button">
+      <section class="quote-section">
+        <p id="msg-quote">Click para obtener una frase!</p>
+      </section>
+
+      <section class="action-section">
         <button id="new-joke" onclick="GetJokes()">Obtener nueva frase</button>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>

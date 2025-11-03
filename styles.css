@@ -1,77 +1,79 @@
-body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding-top: 50px;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f4f8;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
   color: #1e293b;
 }
 
-.top-container h1 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.main-container {
-  width: 400px;
-  min-height: 600px;
-  border: 1px solid #3b82f6;
+.container {
+  width: 90%;
+  max-width: 450px;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  gap: 20px;
+}
+.header h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1e3a8a;
 }
 
-.quote-container {
-  border: 2px solid #3b82f6;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
+.header .highlight {
+  color: #3b82f6;
+}
+
+.image-section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #3b82f6;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.quote-section {
   background-color: #e0e7ff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #1e293b;
   min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.25rem;
-  color: #1e293b;
+  transition: all 0.3s ease;
 }
 
-.img img {
-  max-width: 150px;
-  margin-bottom: 20px;
-}
-
-.quote p {
-  font-size: 1.2rem;
-  text-align: center;
-  min-height: 100px;
-}
-
-.button {
-  margin-top: 30px;
-  width: 100%;
-  max-width: 200px;
-}
-
-button#new-joke {
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
+.action-section button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
   border: none;
-  border-radius: 5px;
-  background-color: #3b82f6;
-  color: white;
-  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
   width: 100%;
 }
 
-button#new-joke:hover {
-  background-color: #2563eb;
+.action-section button:hover {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  transform: scale(1.05);
 }
